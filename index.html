@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fraud Attack & Defence Simulator — FYP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .badge {
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #3fb950;
+      border: 1px solid #238636;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      font-weight: 600;
+      color: #f0f6fc;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    p.desc {
+      max-width: 520px;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #8b949e;
+      margin-bottom: 2.5rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 4rem;
+    }
+
+    a.btn {
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 0.6rem 1.4rem;
+      border-radius: 6px;
+      transition: opacity 0.15s;
+    }
+    a.btn:hover { opacity: 0.8; }
+    .btn-green  { background: #238636; color: #fff; }
+    .btn-gray   { background: #21262d; color: #c9d1d9; border: 1px solid #30363d; }
+
+    .meta {
+      font-size: 0.78rem;
+      color: #484f58;
+      line-height: 2;
+    }
+    .meta strong { color: #6e7681; font-weight: 500; }
+  </style>
+</head>
+<body>
+
+  <span class="badge">SETU Final Year Project · 2025/26</span>
+
+  <h1>Fraud Attack &amp; Defence<br>Simulator with AI</h1>
+
+  <p class="desc">
+    An adversarial multi-agent AI framework where a Red Team generates fraud attacks, a Blue Team defends, and a Judge evaluates outcomes — each agent learning from shared battle history via a 3-tier RAG architecture.
+  </p>
+
+  <div class="links">
+    <a href="#" class="btn btn-green">▶ Watch Demo</a>
+    <a href="#" class="btn btn-gray">Final Report</a>
+    <a href="#" class="btn btn-gray">Poster</a>
+  </div>
+
+  <div class="meta">
+    <strong>Student</strong> · Seán Murphy &nbsp;|&nbsp;
+    <strong>Supervisor</strong> · Mr Jimmy McGibney, SETU<br>
+    <strong>Industry Sponsor</strong> · Sun Life Financial &nbsp;(Wayne Finn &amp; Zohaib Khan)
+  </div>
+
+</body>
+</html>
