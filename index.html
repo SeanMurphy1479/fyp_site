@@ -79,61 +79,7 @@
     }
     .meta strong { color: #6e7681; font-weight: 500; }
 
-    /* Modal */
-    .modal-backdrop {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.85);
-      z-index: 100;
-      align-items: center;
-      justify-content: center;
-      padding: 1.5rem;
-    }
-    .modal-backdrop.open { display: flex; }
 
-    .modal {
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 8px;
-      width: 100%;
-      max-width: 860px;
-      max-height: 90vh;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-    }
-
-    .modal-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.85rem 1.25rem;
-      border-bottom: 1px solid #30363d;
-    }
-    .modal-header span {
-      font-size: 0.875rem;
-      font-weight: 500;
-      color: #f0f6fc;
-    }
-    .modal-close {
-      background: none;
-      border: none;
-      color: #8b949e;
-      font-size: 1.25rem;
-      cursor: pointer;
-      line-height: 1;
-      padding: 0.2rem 0.4rem;
-      border-radius: 4px;
-    }
-    .modal-close:hover { background: #21262d; color: #f0f6fc; }
-
-    .modal iframe {
-      width: 100%;
-      flex: 1;
-      min-height: 70vh;
-      border: none;
-    }
   </style>
 </head>
 <body>
@@ -150,7 +96,7 @@
     <a href="#" class="btn btn-green">▶ Watch Demo</a>
     <a href="#" class="btn btn-gray">GitHub Repo</a>
     <a href="#" class="btn btn-gray">Final Report</a>
-    <button class="btn btn-gray" onclick="openPoster()">Poster</button>
+    <a href="FYP_Poster.pdf" target="_blank" class="btn btn-gray">Poster</a>
   </div>
 
   <div class="meta">
@@ -159,30 +105,7 @@
     <strong>Industry Sponsor</strong> · Sun Life Financial &nbsp;(Wayne Finn &amp; Zohaib Khan)
   </div>
 
-  <div class="modal-backdrop" id="posterModal">
-    <div class="modal">
-      <div class="modal-header">
-        <span>Project Poster</span>
-        <button class="modal-close" onclick="closePoster()">✕</button>
-      </div>
-      <iframe src="FYP_Poster.pdf" type="application/pdf"></iframe>
-    </div>
-  </div>
 
-  <script>
-    function openPoster() {
-      document.getElementById('posterModal').classList.add('open');
-    }
-    function closePoster() {
-      document.getElementById('posterModal').classList.remove('open');
-    }
-    document.getElementById('posterModal').addEventListener('click', function(e) {
-      if (e.target === this) closePoster();
-    });
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closePoster();
-    });
-  </script>
 
 </body>
 </html>
